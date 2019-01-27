@@ -1,0 +1,26 @@
+import random
+slowa = ("python", "gdansk", "dlaczego", "gdynia", "wsb")
+word = random.choice(slowa)
+licznik = 1
+x = 0
+sprawdz = 0
+print("S³owo ma ma ", len(word), " liter(y).")
+while licznik < 5:
+    licznik+=1
+    zapytaj = input("Podaj literê: ")
+    while x < len(word):
+        if(word[x] == zapytaj):
+            print("Ta litera wystêpuje w tym wyrazie")
+            x = 999
+            sprawdz = 1
+        x+=1
+    if sprawdz == 0:
+        print("Ta litera nie wystêpuje w tym wyrazie")
+    else:
+        sprawdz = 0
+    x = 0
+odpowiedz = input("Teraz zgadnij jaki to wyraz: ")
+if odpowiedz == word:
+    print("Gratulacje, zgad³eœ!")
+else:
+    print("Niestety, pomyli³eœ siê!")

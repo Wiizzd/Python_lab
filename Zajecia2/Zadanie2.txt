@@ -1,0 +1,5 @@
+teskt = input("Podaj  wyraz: ")
+x = 0
+while x < len(tekst):
+    print(tekst[len(tekst)-1-x], end="")
+    x+=1

@@ -1,0 +1,23 @@
+import math
+
+waga = float(input("Podaj wagê w kg: "))
+wzrost = float(input("Podaj wzrosc w cm: "))
+
+BMI = waga/(wzrost/100)**2
+
+print("Twoje BMI wynosi ", round(BMI,1))
+
+if(BMI < 18.5):
+    print("Niedowaga. Niskie ryzyko chorób towarzysz¹cych oty³oœci, ale zwiêkszone ryzyko innych problemów zdrowotnych.")
+elif((BMI >= 18.5) and (BMI < 25)):
+    print("Norma, œrednie ryzyko chorób towarzysz¹cych oty³oœci.")
+else:
+    print("Nadwaga.")
+    if(BMI < 30):
+        print("Okres przed oty³oœci¹, podwy¿szone ryzyko chorób towarzysz¹cych oty³oœci.")
+    elif((BMI >= 30) and (BMI < 35)):
+        print("I stopieñ oty³oœci, umiarkowanie podwy¿szone ryzyko chorób towarzysz¹cych oty³oœci.")
+    elif((BMI >= 35) and (BMI < 40)):
+        print("II stopieñ oty³oœci, wysokie ryzyko chorób towarzysz¹cych oty³oœci.")
+    else:
+        print("III stopieñ oty³oœci, bardzo wysokie ryzyko chorób towarzysz¹cych oty³oœci.")

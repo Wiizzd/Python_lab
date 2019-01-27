@@ -1,0 +1,15 @@
+import string
+
+alfA = string.ascii_lowercase
+alfB = string.ascii_uppercase
+licznik = 0
+while licznik < len(alfB):
+    print(alfA[licznik], end="")
+    print(alfB[licznik], end="")
+    licznik+=1
+licznik = 0
+print("\nDruga runda")
+while licznik < len(alfB):
+    print(alfB[licznik], end="")
+    print(alfA[licznik], end="")
+    licznik+=1

@@ -1,0 +1,24 @@
+x = 1
+lista = []
+ile = int(input("Podaj ile liczb chcesz wpisaæ: "))
+while(x < ile+1):
+    liczba = int(input("Podaj liczbê numer: "))
+    lista.append(liczba)
+    x += 1
+x = 0
+while(x < ile):
+    print(x, end=" ")
+    print(lista[x])
+    x += 1
+x = -1
+while(x != -ile):
+    print(lista[x], end=" ")
+    x -= 1
+print(lista.sort)
+dousuniecia = int(input("Podaj liczbê do usuniêcia z listy: "))
+lista.remove(dousuniecia)
+dousuniecia = int(input("Podaj index do usuniêcia: "))
+lista.clear(dousuniecia)
+pierwsza = int(input("Podaj pierwsz¹ liczbê zakresu: "))
+druga = int(input("Podaj drug¹ liczbê zakresu: "))
+print(lista[pierwsza, druga])
